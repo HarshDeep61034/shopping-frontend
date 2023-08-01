@@ -21,7 +21,7 @@ function Router() {
             element: <Contact />,
           },
           {
-            path: "Cart",
+            path: "Cart/:dataParam",
             element: <Cart />,
           },
           {

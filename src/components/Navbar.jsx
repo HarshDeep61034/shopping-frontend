@@ -1,8 +1,10 @@
+import { useState } from "react";
 import "../styles/Navbar.css"
 import { FaShoppingCart } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 
 function Navbar(props) {
+
   return (
     <div className="nav">
       <Link className="logo" to="/" ><h1>BizarreBazaar</h1></Link>
