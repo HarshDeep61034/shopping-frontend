@@ -71,15 +71,14 @@ a {
     }
 
     .cart {
-        position: absolute;
-        right: 20px;
-        top: 120px;
-        font-size: 23px;
+        left: 32vw;
+        margin: 15px;
+        font-size: 20px;
         padding: 5px 25px;
     }
 
     li {
-        font-size: 20px;
+        font-size: 13px;
         padding: 7px 14px;
     }
 }
