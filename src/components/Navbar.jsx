@@ -7,16 +7,16 @@ function Navbar(props) {
     <div className="nav">
       <Link className="logo" to="/" ><h1>BizarreBazaar</h1></Link>
       <div className="navigation">
-        <Link to="/" className={props.page == "Home" && `active`}>
-          <li>HOME</li>
+        <Link to="/" className={props.page == "Home" ? `active` : undefined}>
+           <li>HOME</li>
         </Link>
-        <Link to="/Products" className={props.page == "Products" && "active"}>
-          <li>PRODUCTS</li>
+        <Link to="/Shop" className={props.page == "Shop" ? "active" : undefined }>
+          <li>SHOP</li>
         </Link>
-        <Link to='/About' className={props.page == "About" && "active"}>
-          <li>ABOUT</li>
+        <Link to='/About' className={props.page == "About"  ? "active" : undefined}>
+           <li>ABOUT</li>
         </Link>
-        <Link to="/Contact" className={props.page == "Contact" && "active"}>
+        <Link to="/Contact" className={props.page == "Contact"  ? "active" : undefined} >
           <li>CONTACT US</li>
         </Link>
       </div>

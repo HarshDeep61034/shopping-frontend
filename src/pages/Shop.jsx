@@ -2,8 +2,8 @@ import Navbar from "../components/Navbar"
 
 function Products() {
   return (<>
-    <Navbar page={'Products'}/>
-    <div>Products</div>
+    <Navbar page={'Shop'}/>
+    <div>This is Shop Page.</div>
   </>
   )
 }
