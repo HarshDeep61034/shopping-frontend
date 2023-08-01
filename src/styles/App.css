@@ -11,3 +11,43 @@
     background-color: #F2F2F2;
 }
 
+.cart-illustration{
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 60px;
+}
+
+.main{
+    margin-top: 90px;
+    display: flex;
+    padding: 0px 300px;
+    overflow: hidden;
+}
+
+.para{
+    width: 30vw;
+    font-size: 22px;
+    margin: 0px 40px;
+    position: relative;
+    top: 180px;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.moto{
+    width: 100vw;
+    font-size: 100px;
+    font-weight: 800;
+    position: relative;
+    top: -140px;
+    left: 180px;
+}
+
+.stroke{
+    color:#F2F2F2;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 5px black;
+}
