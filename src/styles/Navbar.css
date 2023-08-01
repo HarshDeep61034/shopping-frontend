@@ -1,4 +1,4 @@
-.nav{
+.nav {
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -6,13 +6,13 @@
     align-items: center;
 }
 
-.logo{
+.logo {
     position: relative;
     left: 200px;
     font-weight: 500;
 }
 
-.navigation{
+.navigation {
     display: flex;
     list-style: none;
     border: 2px solid black;
@@ -21,7 +21,7 @@
     background-color: white;
 }
 
-li{
+li {
     margin: 0px 2px;
     font-size: 25px;
     font-weight: 400;
@@ -31,12 +31,12 @@ li{
     cursor: pointer;
 }
 
-li:hover{
+li:hover {
     background-color: #111111;
     color: white;
 }
 
-.cart{
+.cart {
     position: relative;
     right: 200px;
     font-size: 30px;
@@ -49,11 +49,36 @@ li:hover{
     cursor: pointer;
 }
 
-.cart:hover{
+.cart:hover {
     border-radius: 15px;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
+}
+
+@media only screen and (max-width: 1342px) {
+    .nav {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .logo {
+        left: 0px;
+    }
+
+    .cart {
+        position: absolute;
+        right: 20px;
+        top: 120px;
+        font-size: 23px;
+        padding: 5px 25px;
+    }
+
+    li {
+        font-size: 20px;
+        padding: 7px 14px;
+    }
 }
