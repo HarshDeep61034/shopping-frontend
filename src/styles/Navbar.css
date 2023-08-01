@@ -31,9 +31,10 @@ li {
     cursor: pointer;
 }
 
-li:hover {
+li:hover, .active {
     background-color: #111111;
     color: white;
+    border-radius: 35px;
 }
 
 .cart {

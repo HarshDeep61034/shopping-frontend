@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar"
 function About() {
   return (
     <>
-    <Navbar />
+    <Navbar page={'About'} />
     <div>This is About Page</div>
     </>
   )

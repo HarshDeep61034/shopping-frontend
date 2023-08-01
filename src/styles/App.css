@@ -20,7 +20,7 @@
 .main{
     margin-top: 90px;
     display: flex;
-    padding: 0px 300px;
+    justify-content: center;
     overflow: hidden;
 }
 
@@ -49,5 +49,35 @@
     color:#F2F2F2;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
-    text-shadow: 1px 5px black;
+    text-shadow: -1px 5px black;
 }
+
+.product-btn-div{
+    width: 100vw;
+    text-align: center;
+}
+
+.product-btn{
+    background-color: white;
+    padding: 15px 70px;
+    outline: 2px solid black;
+    font-size: 30px;
+    border: none;
+    border-radius: 24px;
+    margin: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0px 7px 0px 0px rgba(0,0,0,1);
+    transition: all 0.2s;
+}
+
+.product-btn:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 11px 0px 0px rgba(0,0,0,1);
+}
+
+.product-btn:active{
+    transform: translateY(8px);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+
+}
+

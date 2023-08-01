@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar"
 function Contact() {
   return (
     <>
-    <Navbar />
+    <Navbar page={'Contact'}/>
     <div>This is Contact Page</div>
     </>
   )

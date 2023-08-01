@@ -3,6 +3,7 @@ import App from "../App";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Cart from "../pages/Cart";
+import Products from "../pages/Products";
 
 function Router() {
     const router = createBrowserRouter([
@@ -22,6 +23,10 @@ function Router() {
           {
             path: "Cart",
             element: <Cart />,
+          },
+          {
+            path: "Products",
+            element: <Products />,
           },
       ]);
     
