@@ -6,22 +6,17 @@ import { ShopContext } from "../contexts/ShopContext";
 import '../styles/Shop.css';
 
 function Shop() {
-  const { products, cartItems, addToCart } = useContext(ShopContext);
-
-  function handleClick() {
-    console.log(products)
-  }
-  // const elements = data.map((item) => (
-  //   <Product key={item.id} id={item.id} title={item.title} price={item.price} image={item.image} rating={item.rating} />
-  // ));
+  const {cartItems, data, addToCart} = useContext(ShopContext);
+  const elements = data.map((item) => (
+    <Product addToCart={addToCart} key={item.id} id={item.id} title={item.title} price={item.price} image={item.image} rating={item.rating} />
+  ));
 
   return (
     <>
-      <Navbar page={'Shop'}/>
+      <Navbar cartItems={cartItems} page={'Shop'}/>
       <div className='shop'>
-        {/* {elements} */}
+        {elements}
       </div>
-      <button onClick={handleClick}>DEBUG</button>
       <Footer />
     </>
   );

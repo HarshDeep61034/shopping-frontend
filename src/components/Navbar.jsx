@@ -1,9 +1,10 @@
-import { useState } from "react";
 import "../styles/Navbar.css"
 import { FaShoppingCart } from 'react-icons/fa';
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { ShopContext } from "../contexts/ShopContext";
 
-function Navbar(props) {
+function Navbar(props){
 
   return (
     <div className="nav">
@@ -23,7 +24,7 @@ function Navbar(props) {
         </Link>
       </div>
       <Link to="/Cart" className="cart">
-          <FaShoppingCart /> CART
+      <span className="cartcount">{props.cartItems && props.cartItems.length} </span><FaShoppingCart /> CART
       </Link>
     </div>
   )

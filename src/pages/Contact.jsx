@@ -1,10 +1,13 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import { useContext } from "react"
+import { ShopContext } from "../contexts/ShopContext"
 
 function Contact() {
+  const {cartItems} = useContext(ShopContext);
   return (
     <>
-    <Navbar page={'Contact'}/>
+    <Navbar cartItems={cartItems} page={'Contact'}/>
     <div>This is Contact Page</div>
     <Footer />
     </>

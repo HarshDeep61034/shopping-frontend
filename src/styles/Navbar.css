@@ -82,3 +82,15 @@ a {
         padding: 7px 14px;
     }
 }
+
+.cartcount{
+    font-size: 14px;
+    font-weight: 700;
+    background-color: white;
+    color: black;
+    padding: 0px 4px;
+    border-radius: 50%;
+    position: relative;
+    left: 40px;
+    bottom: 20px;
+}

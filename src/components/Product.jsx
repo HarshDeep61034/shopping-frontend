@@ -23,7 +23,7 @@ const truncatedTitle = truncateText(props.title, maxLength);
         <p className='rating'>{props.rating.rate} <FaStar /> ({props.rating.count})</p>
         </div>
         <div className='product-btns'>
-            <button className='addtocart-btn'>Add to cart</button>
+            <button className='addtocart-btn' onClick={()=>props.addToCart(props.id)}>Add to cart</button>
             <button className='buynow-btn'>Buy Now</button>
         </div>
     </div>
