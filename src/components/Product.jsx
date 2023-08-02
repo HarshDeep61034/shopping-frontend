@@ -1,33 +1,46 @@
-import '../styles/Product.css'
+import { Link } from 'react-router-dom';
+import '../styles/Product.css';
 import { FaStar } from 'react-icons/fa';
+
 function Product(props) {
-    function truncateText(text, maxLength) {
-        if (text.length <= maxLength) {
-          return text;
-        } else {
-          return text.substring(0, maxLength - 3) + '...';
-        }
-      }
+  function truncateText(text, maxLength) {
+    if (text.length <= maxLength) {
+      return text;
+    } else {
+      return text.substring(0, maxLength - 3) + '...';
+    }
+  }
 
-const maxLength = 40; 
+  function handleAddToCart(event) {
+    event.stopPropagation();
+    props.addToCart(props.id);
+  }
 
-const truncatedTitle = truncateText(props.title, maxLength);
+  const maxLength = 40;
+  const truncatedTitle = truncateText(props.title, maxLength);
+
   return (
     <div className="product">
-        <div className="product-img">
-        <img  className='product-img' src={props.image} alt="lol" />
-        </div> 
+      <Link to={`/Shop/Product/${props.id}`}>
+        <div className="product-img-div">
+          <img className="product-img" src={props.image} alt="lol" />
+        </div>
         <div className="details">
-        <p className='title'>{truncatedTitle}</p>
-        <p className='price'>{props.price}$</p>
-        <p className='rating'>{props.rating.rate} <FaStar /> ({props.rating.count})</p>
+          <p className="title">{truncatedTitle}</p>
+          <p className="price">{props.price}$</p>
+          <p className="rating">
+            {props.rating.rate} <FaStar /> ({props.rating.count})
+          </p>
         </div>
-        <div className='product-btns'>
-            <button className='addtocart-btn' onClick={()=>props.addToCart(props.id)}>Add to cart</button>
-            <button className='buynow-btn'>Buy Now</button>
-        </div>
+      </Link>
+      <div className="product-btns">
+        <button className="addtocart-btn" onClick={handleAddToCart}>
+          Add to cart
+        </button>
+        <button className="buynow-btn">Buy Now</button>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Product
+export default Product;

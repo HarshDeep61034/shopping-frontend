@@ -1,0 +1,72 @@
+.hr-cartitem{
+    width: 600px;
+}
+
+.cart-page{
+    display: flex;
+    justify-content: center;
+}
+
+.cart-item-list{
+    margin-right: 200px;
+}
+
+.ordersummary{
+    margin-left: 200px;
+    width: 550px;
+    height: 400px;
+}
+
+.order{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.cuopon-input{
+    width: 97%;
+    height: 55px;
+    border: 1px solid black;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.cuopon-input::placeholder{
+    font-size: 17px;
+    color: #BBBDCB;
+}
+
+.total{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+
+.checkout-btn{
+    width: 100%;
+    height: 60px;
+    background-color: #111111;
+    color: white;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.cart-heading{
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+    left: 250px;
+}
+
+.coupon-btn{
+    width: 200px;
+    height: 40px;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}

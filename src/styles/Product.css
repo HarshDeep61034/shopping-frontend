@@ -16,9 +16,8 @@
     box-shadow: 0px 8px 0px 0px rgba(0,0,0,1);
 }
 
-.product:active{
-    transform: translateY(8px);
-    box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+.product-img-div{
+    display: flex;
 }
 
 .product-img{
@@ -38,6 +37,7 @@
 
 .details{
     position: absolute;
+    width: 90%;
     bottom: 85px;
     background-color: white;
     box-shadow: 0px -10px 15px 10px rgba(256,256,256, 1);

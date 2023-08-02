@@ -4,6 +4,8 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Cart from "../pages/Cart";
 import Shop from "../pages/Shop";
+import {Coupons} from "../pages/Cuopons";
+import Productpage from "../pages/Productpage";
 
 function Router() {
     const router = createBrowserRouter([
@@ -27,6 +29,14 @@ function Router() {
           {
             path: "Shop",
             element: <Shop />,
+          },
+          {
+            path: "Shop/Product/:id",
+            element: <Productpage />,
+          },
+          {
+            path: "harshdeep61034/coupons",
+            element: <Coupons />,
           },
       ]);
     

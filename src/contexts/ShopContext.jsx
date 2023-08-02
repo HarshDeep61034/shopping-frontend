@@ -5,6 +5,7 @@ const ShopContext = createContext({
   products: [],
   cartItems: [],
   addToCart: () => {},
+  removeFromCart: () => {},
 });
 
 
@@ -27,6 +28,12 @@ function ShopProvider({children}) {
       }
     };
 
+    const removeFromCart = (id) => {
+      setCartItems((prevItems) => {
+        return prevItems.filter((item) => item.id !== id);
+      });
+    };
+    
     if (loading) {
       // You can render a loading spinner or placeholder while data is being fetched
       return <div>Loading...</div>;
@@ -35,7 +42,7 @@ function ShopProvider({children}) {
     return (
       /* We are going to pass the things that we want to inject to these components using the value prop */
       /* This value prop will overwrite the default value */
-      <ShopContext.Provider value={{cartItems, data, addToCart}}>
+      <ShopContext.Provider value={{cartItems, data, addToCart, removeFromCart}}>
         {children}
       </ShopContext.Provider>
     );

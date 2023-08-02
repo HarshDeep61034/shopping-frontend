@@ -24,7 +24,7 @@ function Navbar(props){
         </Link>
       </div>
       <Link to="/Cart" className="cart">
-      <span className="cartcount">{props.cartItems && props.cartItems.length} </span><FaShoppingCart /> CART
+      <span className="cartcount">{props.cartItems.length}</span><FaShoppingCart /> CART
       </Link>
     </div>
   )

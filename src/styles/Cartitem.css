@@ -1,3 +1,45 @@
 .cart-item{
     display: flex;
+    width: 600px;
+    max-height: 170px;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    margin: 25px 0px;
+}
+
+.img-cart-item{
+    overflow: hidden;
+}
+
+.item-img{
+    width: 140px;
+}
+
+.remove-btn{
+    position: relative;
+    top: 120px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.remove-btn:hover{
+    text-decoration: none;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+.cart-item-title{
+    font-size: 22px;
+}
+
+.info{
+    overflow: hidden;
+}
+
+.cart-item-price{
+    font-size: 28px;
+    font-weight: 600;
 }
