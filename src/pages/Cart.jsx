@@ -63,7 +63,7 @@ function Cart() {
         </div>
         <div className="ordersummary">
           <p className="order">Order Summary</p>
-          <input onChange={handleInput} className="cuopon-input" type="text" placeholder="Enter Cuopon Code here" />
+          <input onChange={handleInput} className="coupon-input" type="text" placeholder="Enter Cuopon Code here" />
           <button className="coupon-btn" onClick={applyCoupon}>Apply Coupon</button>
           { couponExist && <div className="total">
             <div>Discount</div>
