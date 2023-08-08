@@ -16,7 +16,7 @@ function Footer() {
                 </div>
             </div>
             <div className="footer-bottom bottom-link">
-                <p>&copy; {new Date().getFullYear()} Bizaare Bazzar. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} Bizaare Bazzar. &nbsp; All rights reserved.</p>
                 <p>
                     <Link className='bottom-link' to="/terms">Terms of Service</Link> | <Link className='bottom-link' to="/privacy">Privacy Policy</Link>
                 </p>
